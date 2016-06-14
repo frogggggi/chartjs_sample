@@ -1,0 +1,35 @@
+{
+  "browser": true,
+  "devel": true,
+  "jquery": true,
+  "node": true,
+
+  "globals": {
+    "JSON": false,
+    "_": false
+  },
+
+  "bitwise": true,
+  "curly": true,
+  "eqeqeq": true,
+  "es3": false,
+  "esnext": true,
+  "expr": true,
+  "forin": true,
+  "freeze": true,
+  "immed": false,
+  "indent": 2,
+  "latedef": "nofunc",
+  "maxdepth": 5,
+  "maxparams": 5,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonbsp": true,
+  "plusplus": false,
+  "quotmark": "single",
+  "trailing": true,
+  "undef": true,
+  "unused": true,
+  "strict": false
+}
