@@ -3,7 +3,7 @@
  */
 module.exports = {
     // 出力先ディレクトリ
-    dist: 'dist/',
+    dist: 'docs/',
     // gulpコマンドでデフォルトで監視するディレクトリ(assets/*/)
     defaultPath: '',
     // サーバー設定
@@ -20,8 +20,8 @@ module.exports = {
       style: {
         src: 'assets/%type%/styl/**/index.styl',
         watch: 'assets/%type%/styl/**/*.styl',
-        dist: 'dist/%type%/css/**/*.css',
-        dest: 'dist/%type%/css'
+        dist: 'docs/%type%/css/**/*.css',
+        dest: 'docs/%type%/css'
       },
       sprite: {
         src: 'assets/%type%/_imgSprites/**/*',
@@ -36,21 +36,21 @@ module.exports = {
           'assets/%type%/js/top.js',
           'assets/%type%/js/pageSample.js'
         ],
-        dist: 'dist/%type%/js/**/*.js',
-        dest: 'dist/%type%/js',
+        dist: 'docs/%type%/js/**/*.js',
+        dest: 'docs/%type%/js',
       },
       img: {
-        dist: 'dist/%type%/img/**/*',
-        dest: 'dist/%type%/img'
+        dist: 'docs/%type%/img/**/*',
+        dest: 'docs/%type%/img'
       },
       copy: [
         {
           from: 'assets/%type%/**/*.html',
-          to: 'dist/%type%/'
+          to: 'docs/%type%/'
         },
         {
           from: 'assets/%type%/img/**/*',
-          to: 'dist/%type%/img'
+          to: 'docs/%type%/img'
         }
       ]
     }

@@ -56,3 +56,8 @@ gulp.task('build', function (callback) {
 gulp.task('default', ['clean'], function () {
   return runSequence('build', 'server',  'watch', 'watchScript');
 });
+
+gulp.task('dist', (callback) => {
+  global.__IS_PRODUCTION = true;
+  return runSequence('build', callback);
+});
